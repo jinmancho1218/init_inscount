@@ -11,5 +11,6 @@ obj-intel64/
 *.so
 *.log
 *.out
+*.info
 *.swp
 .pin_root

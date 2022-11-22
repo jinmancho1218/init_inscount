@@ -45,4 +45,4 @@ cd $RUN_PATH
 
 # Run extraction
 echo "$PIN_ROOT/pin -ifeellucky -t $COUNT_TOOL_ROOT/obj-intel64/init_instcount.so -o $BENCH_NAME.info -- $BENCH_BIN_PATH -m $BENCH_NAME"
-$PIN_ROOT"/pin" -ifeellucky -t $COUNT_TOOL_ROOT"/obj-intel64/init_instcount.so" -o $BENCHNAME".info" -- $BENCH_BIN_PATH -m $BENCH_NAME
+$PIN_ROOT"/pin" -ifeellucky -t $COUNT_TOOL_ROOT"/obj-intel64/init_instcount.so" -o $BENCH_NAME".info" -- $BENCH_BIN_PATH -m $BENCH_NAME

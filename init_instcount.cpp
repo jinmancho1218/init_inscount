@@ -57,7 +57,7 @@ typedef struct RtnCount
 /* Command line switches */
 /* ================================================ */
 KNOB<string> KnobOutputFile(KNOB_MODE_WRITEONCE, "pintool",
-    "o", "default_init_inscount.out", "specify output file name");
+    "o", "default_init_inscount.info", "specify output file name");
 KNOB<string> KnobTargetLibName(KNOB_MODE_WRITEONCE, "pintool",
     "libname", "TransformerNLP", "specify library (or app) name");
 KNOB<string> KnobTargetRtnName(KNOB_MODE_WRITEONCE, "pintool",
@@ -171,10 +171,10 @@ int main(int argc, char * argv[])
     // Initialize symbol table code, needed for rtn instrumentation
     PIN_InitSymbols();
 
-    outFile.open(KnobOutputFile.Value( ).c_str( ));
-
     // Initialize pin
     if (PIN_Init(argc, argv)) return Usage();
+    
+    outFile.open(KnobOutputFile.Value( ).c_str( ));
 
     // Register Routine to be called to instrument rtn
     RTN_AddInstrumentFunction(Routine, 0);
