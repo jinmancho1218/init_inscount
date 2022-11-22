@@ -12,3 +12,4 @@ obj-intel64/
 *.log
 *.out
 *.swp
+.pin_root
