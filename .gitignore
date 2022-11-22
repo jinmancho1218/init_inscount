@@ -1,4 +1,14 @@
+obj-*
+pin
+pin-*
+.pin_root
+output/
+output/dictionary
+output/sentence
+output/params
 obj-intel64/
+*.o
+*.so
 *.log
-*.txt
+*.out
 *.swp

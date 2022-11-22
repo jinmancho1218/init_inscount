@@ -37,6 +37,6 @@ TOOL_CXXFLAGS += -Wall -g -std=c++0x -Wno-error -Wextra -Wno-unused-parameter -p
 # TOOL_LIBS += -lelf
 #TOOL_LIBS += /opt/pin-2.14-67254-gcc.4.4.7-linux/intel64/lib-ext/libelf.a
 
-TOOL_ROOTS := inscount1
+TOOL_ROOTS := init_instcount
 
 include $(TOOLS_ROOT)/Config/makefile.default.rules
