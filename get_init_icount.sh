@@ -20,6 +20,10 @@ if [ $ARGC != 1 -a $ARGC != 2 ]; then
 fi
 
 BENCH_NAME=$1
+if [ $BENCH_NAME != "transformer" -a $BENCH_NAME != "bert-base" -a $BENCH_NAME != "bert-large" -a $BENCH_NAME != "t5-small" -a $BENCH_NAME != "t5-base" -a $BENCH_NAME != "gpt2" ]; then
+    echo "Invalid benchmark"
+    exit
+fi
 
 if [ $ARGC == 2 ]; then
     COUNT_TOOL_ROOT=$2
