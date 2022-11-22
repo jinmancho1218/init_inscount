@@ -75,6 +75,7 @@ VOID rtn_check(CHAR * rtn_name, CHAR * img_name)
         rtn_ref.find(KnobTargetRtnName.Value( ))!=string::npos)
     {
         cout << "check point at " << rtn_name << " | " << img_name << endl;
+        PIN_ExitApplication(1);
     }
 }
  
